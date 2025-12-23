@@ -1,0 +1,601 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom Medical Theme Variables */
+:root {
+  --medical-blue: #2563eb;
+  --medical-blue-light: #3b82f6;
+  --medical-blue-dark: #1d4ed8;
+  --medical-slate: #64748b;
+  --medical-slate-light: #94a3b8;
+  --medical-slate-dark: #475569;
+  --medical-emerald: #059669;
+  --medical-rose: #e11d48;
+  --medical-amber: #f59e0b;
+  --medical-purple: #7c3aed;
+  --medical-cyan: #0891b2;
+  --medical-lime: #65a30d;
+  --medical-fuchsia: #c026d3;
+  --medical-orange: #ea580c;
+  --medical-pink: #ec4899;
+  --medical-teal: #0d9488;
+  --medical-yellow: #ca8a04;
+  --medical-green: #16a34a;
+  --medical-violet: #7c3aed;
+  --medical-indigo: #4f46e5;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Custom Medical Components */
+/* Medical Cards */
+.medical-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.dark .medical-card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.medical-card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-color: #d1d5db;
+}
+
+.dark .medical-card:hover {
+  border-color: #4b5563;
+}
+
+/* Medical Buttons */
+.medical-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.medical-btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.medical-btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.medical-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.medical-btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.dark .medical-btn-secondary {
+  background-color: #374151;
+  color: #d1d5db;
+  border-color: #4b5563;
+}
+
+.dark .medical-btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+/* Medical Badges */
+.medical-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.medical-badge-blue {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.medical-badge-blue:hover {
+  background-color: #bfdbfe;
+}
+
+.dark .medical-badge-blue {
+  background-color: rgba(29, 78, 216, 0.2);
+  color: #93c5fd;
+  border-color: rgba(29, 78, 216, 0.3);
+}
+
+.dark .medical-badge-blue:hover {
+  background-color: rgba(29, 78, 216, 0.3);
+}
+
+.medical-badge-emerald {
+  background-color: #d1fae5;
+  color: #059669;
+  border-color: #a7f3d0;
+}
+
+.medical-badge-emerald:hover {
+  background-color: #a7f3d0;
+}
+
+.dark .medical-badge-emerald {
+  background-color: rgba(5, 150, 105, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(5, 150, 105, 0.3);
+}
+
+.dark .medical-badge-emerald:hover {
+  background-color: rgba(5, 150, 105, 0.3);
+}
+
+.medical-badge-rose {
+  background-color: #ffe4e6;
+  color: #e11d48;
+  border-color: #fecdd3;
+}
+
+.medical-badge-rose:hover {
+  background-color: #fecdd3;
+}
+
+.dark .medical-badge-rose {
+  background-color: rgba(225, 29, 72, 0.2);
+  color: #fda4af;
+  border-color: rgba(225, 29, 72, 0.3);
+}
+
+.dark .medical-badge-rose:hover {
+  background-color: rgba(225, 29, 72, 0.3);
+}
+
+.medical-badge-amber {
+  background-color: #fef3c7;
+  color: #d97706;
+  border-color: #fde68a;
+}
+
+.medical-badge-amber:hover {
+  background-color: #fde68a;
+}
+
+.dark .medical-badge-amber {
+  background-color: rgba(217, 119, 6, 0.2);
+  color: #fcd34d;
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+.dark .medical-badge-amber:hover {
+  background-color: rgba(217, 119, 6, 0.3);
+}
+
+/* Medical Header */
+.gradient-medical-blue {
+  background: linear-gradient(135deg, var(--medical-blue) 0%, var(--medical-blue-light) 100%);
+}
+
+.gradient-medical-emerald {
+  background: linear-gradient(135deg, var(--medical-emerald) 0%, #10b981 100%);
+}
+
+.gradient-medical-rose {
+  background: linear-gradient(135deg, var(--medical-rose) 0%, #f43f5e 100%);
+}
+
+.gradient-medical-amber {
+  background: linear-gradient(135deg, var(--medical-amber) 0%, #fbbf24 100%);
+}
+
+/* Medical Sidebar */
+.medical-sidebar {
+  background-color: white;
+  border-right: 1px solid #e5e7eb;
+}
+
+.dark .medical-sidebar {
+  background-color: #1f2937;
+  border-right-color: #374151;
+}
+
+/* Medical Search */
+.medical-search {
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.medical-search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.dark .medical-search {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+.dark .medical-search::placeholder {
+  color: #9ca3af;
+}
+
+/* Medical Navigation */
+.medical-nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.medical-nav-item-active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border: 1px solid #dbeafe;
+}
+
+.dark .medical-nav-item-active {
+  background-color: rgba(29, 78, 216, 0.2);
+  color: #93c5fd;
+  border-color: rgba(29, 78, 216, 0.3);
+}
+
+.medical-nav-item-inactive {
+  color: #4b5563;
+}
+
+.medical-nav-item-inactive:hover {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.dark .medical-nav-item-inactive {
+  color: #d1d5db;
+}
+
+.dark .medical-nav-item-inactive:hover {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+/* Medical Status Indicators */
+.medical-status-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Medical Content Cards */
+.medical-content-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.medical-content-card-light {
+  background-color: white;
+  border-color: #e5e7eb;
+}
+
+.medical-content-card-light:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-color: #d1d5db;
+}
+
+.dark .medical-content-card-light {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .medical-content-card-light:hover {
+  border-color: #4b5563;
+}
+
+/* Medical Warning Cards */
+.medical-warning-card {
+  border-radius: 0.75rem;
+  border: 1px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.medical-warning-rose {
+  background-color: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.medical-warning-rose:hover {
+  border-color: #fda4af;
+}
+
+.dark .medical-warning-rose {
+  background-color: rgba(225, 29, 72, 0.2);
+  border-color: rgba(225, 29, 72, 0.3);
+}
+
+.dark .medical-warning-rose:hover {
+  border-color: rgba(225, 29, 72, 0.5);
+}
+
+.medical-warning-amber {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+}
+
+.medical-warning-amber:hover {
+  border-color: #fcd34d;
+}
+
+.dark .medical-warning-amber {
+  background-color: rgba(217, 119, 6, 0.2);
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+.dark .medical-warning-amber:hover {
+  border-color: rgba(217, 119, 6, 0.5);
+}
+
+/* Medical Info Cards */
+.medical-info-card {
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.medical-info-blue {
+  background-color: #eff6ff;
+  border-color: #dbeafe;
+}
+
+.medical-info-blue:hover {
+  border-color: #bfdbfe;
+}
+
+.dark .medical-info-blue {
+  background-color: rgba(29, 78, 216, 0.2);
+  border-color: rgba(29, 78, 216, 0.3);
+}
+
+.dark .medical-info-blue:hover {
+  border-color: rgba(29, 78, 216, 0.5);
+}
+
+.medical-info-emerald {
+  background-color: #d1fae5;
+  border-color: #a7f3d0;
+}
+
+.medical-info-emerald:hover {
+  border-color: #6ee7b7;
+}
+
+.dark .medical-info-emerald {
+  background-color: rgba(5, 150, 105, 0.2);
+  border-color: rgba(5, 150, 105, 0.3);
+}
+
+.dark .medical-info-emerald:hover {
+  border-color: rgba(5, 150, 105, 0.5);
+}
+
+/* Medical Code Blocks */
+.medical-code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  color: #4b5563;
+}
+
+.dark .medical-code {
+  background-color: rgba(17, 24, 39, 0.3);
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+/* Medical Focus Styles */
+.medical-focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.medical-focus:focus {
+  border-color: #2563eb;
+}
+
+.dark .medical-focus {
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #1f2937;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 9999px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}
+
+/* Text Utilities */
+.text-medical-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .text-medical-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.text-medical-heading {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.text-medical-subheading {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-medical-body {
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.text-medical-caption {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+/* Medical Icon Colors */
+.text-medical-blue {
+  color: var(--medical-blue);
+}
+
+.text-medical-emerald {
+  color: var(--medical-emerald);
+}
+
+.text-medical-rose {
+  color: var(--medical-rose);
+}
+
+.text-medical-amber {
+  color: var(--medical-amber);
+}
+
+.text-medical-purple {
+  color: var(--medical-purple);
+}
+
+.text-medical-cyan {
+  color: var(--medical-cyan);
+}
+
+.text-medical-lime {
+  color: var(--medical-lime);
+}
+
+.text-medical-fuchsia {
+  color: var(--medical-fuchsia);
+}
+
+.text-medical-orange {
+  color: var(--medical-orange);
+}
+
+.text-medical-pink {
+  color: var(--medical-pink);
+}
+
+.text-medical-teal {
+  color: var(--medical-teal);
+}
+
+.text-medical-yellow {
+  color: var(--medical-yellow);
+}
+
+.text-medical-green {
+  color: var(--medical-green);
+}
+
+.text-medical-violet {
+  color: var(--medical-violet);
+}
+
+.text-medical-indigo {
+  color: var(--medical-indigo);
+}

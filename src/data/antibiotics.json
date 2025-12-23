@@ -1,0 +1,685 @@
+{
+  "carbapenems": [
+    {
+      "name": "Meropenem (Merrem®)",
+      "keyUses": ["ESBL infections", "HAP/VAP with Pseudomonas", "Severe sepsis", "Intra-abdominal infections"],
+      "spectrum": "Broadest β-lactam available - Gram-negative (98%), anti-anaerobe",
+      "dosing": "1-2g IV q8h (extended infusion 3-4h for serious infections)",
+      "renalAdjustment": "CrCl 26-50: 1g q12h; CrCl 10-25: 500mg q12h; CrCl <10: 500mg q24h; HD: 500mg post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Contraindicated with valproic acid - reduces levels 60-90%",
+      "resistanceInfo": "Active vs. ESBL, KPC, OXA-48; NOT active vs. NDM/VIM/IMP",
+      "drugInteractions": "Valproic acid (↓ levels 60-90%), probenecid (↑ levels 50%), warfarin (↑ INR 10-20%)",
+      "precautions": "CNS toxicity with renal failure, C. difficile risk 3-5%, thrombocytopenia with prolonged use"
+    },
+    {
+      "name": "Ertapenem (Invanz®)",
+      "keyUses": ["ESBL infections (non-Pseudomonas)", "Community-acquired intra-abdominal infections"],
+      "spectrum": "Similar to meropenem but NO Pseudomonas or Acinetobacter activity",
+      "dosing": "1g IV/IM q24h",
+      "renalAdjustment": "CrCl 11-30: 500mg q24h; CrCl ≤10: 250-500mg q48h; HD: 500mg post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Same contraindications as meropenem (valproic acid, carbapenem allergy)",
+      "resistanceInfo": "Active vs. ESBL producers (non-Pseudomonas)",
+      "drugInteractions": "Valproic acid (contraindicated), probenecid (↑ levels)",
+      "precautions": "C. difficile risk 3-5%, avoid in Pseudomonas suspected"
+    },
+    {
+      "name": "Doripenem (Doribax®)",
+      "keyUses": ["Pseudomonas infections", "HAP/VAP"],
+      "spectrum": "Superior Pseudomonas activity vs. meropenem",
+      "dosing": "500mg IV q8h (4h extended infusion for HAP/VAP)",
+      "renalAdjustment": "CrCl 30-50: 250mg q8h; CrCl <30: 250mg q12h; HD: 250mg q12h + post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Lower seizure risk than imipenem",
+      "resistanceInfo": "Enhanced activity against MDR Pseudomonas",
+      "drugInteractions": "Valproic acid (↓ levels), probenecid (↑ levels)",
+      "precautions": "Seizure risk 1-2%, avoid in CNS infections"
+    },
+    {
+      "name": "Imipenem-Cilastatin (Primaxin®)",
+      "keyUses": ["Polymicrobial infections", "Intra-abdominal infections", "Bone/joint infections"],
+      "spectrum": "Broad Gram-positive and Gram-negative coverage (no MRSA)",
+      "dosing": "500mg-1g IV q6-8h (based on infection severity)",
+      "renalAdjustment": "CrCl 41-70: 250-500mg q6-8h; CrCl 21-40: 250mg q6-12h; CrCl <20: 250mg q12h; HD: 250mg q12h",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Highest seizure risk among carbapenems (3-5%) - AVOID in CNS infections",
+      "resistanceInfo": "Pseudomonas resistance develops rapidly during therapy",
+      "drugInteractions": "Valproic acid (contraindicated), ganciclovir (↑ seizure risk)",
+      "precautions": "Cilastatin component required to prevent nephrotoxicity, high nausea incidence (20%)"
+    }
+  ],
+  "penicillins": [
+    {
+      "name": "Piperacillin-Tazobactam (Zosyn®)",
+      "keyUses": ["Gram-negative infections", "Pseudomonas coverage", "Intra-abdominal infections"],
+      "spectrum": "Reliable anti-pseudomonal activity, good anaerobic coverage",
+      "dosing": "4.5g IV q6h (extended 4h infusion for serious infections)",
+      "renalAdjustment": "CrCl 20-40: 2.25g q6h; CrCl <20: 2.25g q8h; HD: 2.25g q8h + post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Thrombocytopenia (5-15%), hypokalemia (10-20%), C. difficile risk",
+      "resistanceInfo": "NOT active against ESBL producers",
+      "drugInteractions": "Methotrexate (↓ clearance), warfarin (↑ INR)",
+      "precautions": "Sodium overload (2.79 mEq Na/g), avoid concurrent vancomycin (↑ nephrotoxicity 3-5x)"
+    },
+    {
+      "name": "Ampicillin-Sulbactam (Unasyn®)",
+      "keyUses": ["Anaerobic infections", "Acinetobacter infections", "Aspiration pneumonia"],
+      "spectrum": "Sulbactam inhibits ESBLs and has intrinsic anti-Acinetobacter activity",
+      "dosing": "3g IV q6h (9g q8h for CRAB infections)",
+      "renalAdjustment": "CrCl 15-29: 1.5-3g q12h; CrCl <15: 1.5-3g q24h; HD: 1.5-3g post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Sodium overload (5 mEq Na/g)",
+      "resistanceInfo": "Unique activity against some ESBLs and Acinetobacter",
+      "drugInteractions": "Allopurinol (↑ rash risk 3x)",
+      "precautions": "Rash risk 10% in infectious mononucleosis, C. difficile risk 5-8%"
+    },
+    {
+      "name": "Penicillin G",
+      "keyUses": ["Streptococcal infections", "Syphilis", "Meningitis (S. pneumoniae)"],
+      "spectrum": "Streptococci, some MSSA, Treponema pallidum",
+      "dosing": "3-4 million units IV q4h (severe infections)",
+      "renalAdjustment": "CrCl <10: 2 million units q6h; HD: 2 million units post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Hypersensitivity reactions (3-10%), Jarisch-Herxheimer reaction in syphilis",
+      "resistanceInfo": "High resistance in community MRSA, ESBL producers",
+      "drugInteractions": "Probenecid (↑ levels 2-4x), methotrexate (↓ clearance)",
+      "precautions": "Test dose for allergy history, potassium content (1.7 mEq/g in K+ salt)"
+    },
+    {
+      "name": "Amoxicillin-Clavulanate (Augmentin®)",
+      "keyUses": ["Otitis media", "Sinusitis", "Community-acquired pneumonia", "Animal/human bites"],
+      "spectrum": "Extended spectrum with β-lactamase inhibition",
+      "dosing": "875mg/125mg PO q12h or 2g/125mg IV q8h",
+      "renalAdjustment": "CrCl 10-30: 500mg/125mg q12h; CrCl <10: 500mg/125mg q24h; HD: 500mg/125mg post-HD",
+      "hepaticAdjustment": "Severe hepatic impairment: Use 50% dose",
+      "keyWarning": "Cholestatic jaundice (1-3%), especially with prolonged therapy (>2 weeks)",
+      "resistanceInfo": "NOT active against ESBL producers or MRSA",
+      "drugInteractions": "Methotrexate (↓ clearance), oral contraceptives (↓ efficacy)",
+      "precautions": "Allopurinol co-administration ↑ rash risk 3x (not true allergy)"
+    }
+  ],
+  "cephalosporins": [
+    {
+      "name": "Ceftriaxone (Rocephin®)",
+      "keyUses": ["Community-acquired pneumonia", "Meningitis", "Gonorrhea", "Lyme disease"],
+      "spectrum": "Excellent streptococci coverage, good Gram-negative",
+      "dosing": "1-2g IV/IM q24h",
+      "renalAdjustment": "No adjustment needed (dual elimination)",
+      "hepaticAdjustment": "Reduce dose if severe hepatic impairment + renal dysfunction combined",
+      "keyWarning": "Biliary sludge with prolonged use, NEVER co-administer with calcium",
+      "resistanceInfo": "NOT active against ESBL producers or MRSA",
+      "drugInteractions": "Calcium-containing solutions (precipitation risk)",
+      "precautions": "Neonates with hyperbilirubinemia (displaces bilirubin)"
+    },
+    {
+      "name": "Cefepime (Maxipime®)",
+      "keyUses": ["Febrile neutropenia", "Pseudomonas infections", "HAP/VAP"],
+      "spectrum": "Anti-pseudomonal cephalosporin, stable to AmpC",
+      "dosing": "2g IV q8h (extended 4h infusion)",
+      "renalAdjustment": "CrCl 30-60: 1-2g q12h; CrCl 11-29: 1-2g q24h; CrCl ≤10: 0.5-1g q24h; HD: 0.5-1g q24h + post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Neurotoxicity risk in renal failure (seizures 1-3%)",
+      "resistanceInfo": "Stable to AmpC but NOT ESBL",
+      "drugInteractions": "None significant",
+      "precautions": "Neurotoxicity with renal failure, discontinue if myoclonus develops"
+    },
+    {
+      "name": "Ceftazidime-Avibactam (Avycaz®)",
+      "keyUses": ["CRE infections (KPC/OXA-48)", "Complicated UTIs", "HAP/VAP"],
+      "spectrum": "Active vs. KPC and OXA-48 CRE",
+      "dosing": "2.5g IV q8h over 2-3 hours",
+      "renalAdjustment": "CrCl 31-50: 1.25g q8h; CrCl 16-30: 0.94g q8h; CrCl ≤15: 0.94g q12h; HD: 0.94g q12h + post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Combine with aztreonam for NDM producers",
+      "resistanceInfo": "First-line for KPC-producing Enterobacterales",
+      "drugInteractions": "None significant",
+      "precautions": "Higher cost ($1,200-1,500/day), not active against NDM"
+    },
+    {
+      "name": "Ceftaroline (Zinifaro®)",
+      "keyUses": ["MRSA skin infections", "Community-acquired pneumonia"],
+      "spectrum": "Only cephalosporin with MRSA activity",
+      "dosing": "600mg IV q12h",
+      "renalAdjustment": "CrCl 30-50: 400mg q12h; CrCl <30: 300mg q12h; HD: 300mg q12h + post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "QT prolongation risk (2-3%), monitor ECG in high-risk patients",
+      "resistanceInfo": "Not active against ESBL or CRE",
+      "drugInteractions": "Warfarin (↑ INR 10-20%)",
+      "precautions": "Cross-reactivity with penicillins 10%, avoid in Pseudomonas suspected"
+    }
+  ],
+  "aminoglycosides": [
+    {
+      "name": "Gentamicin",
+      "keyUses": ["Gram-negative sepsis", "Pseudomonas pneumonia", "Synergy for endocarditis"],
+      "spectrum": "Pseudomonas, ESBL Gram-negative (aminoglycoside activity independent of β-lactamases)",
+      "dosing": "5-7 mg/kg q24h (extended interval dosing)",
+      "renalAdjustment": "Requires TDM; adjust interval based on CrCl (CrCl 40-60: 4mg/kg q24h; CrCl 20-40: 3mg/kg q48h)",
+      "hepaticAdjustment": "No adjustment, but avoid in severe liver disease with nephrotoxins",
+      "keyWarning": "Nephrotoxicity (10-25%), ototoxicity (5-10%) - TDM mandatory",
+      "resistanceInfo": "Resistance common in Acinetobacter",
+      "drugInteractions": "Loop diuretics (↑ ototoxicity), vancomycin (↑ nephrotoxicity 3-5x)",
+      "precautions": "Contraindicated in myasthenia gravis, AVOID in pregnancy"
+    },
+    {
+      "name": "Tobramycin",
+      "keyUses": ["Pseudomonas infections", "Cystic fibrosis exacerbations"],
+      "spectrum": "Superior for Pseudomonas (MIC 0.5-2 μg/mL)",
+      "dosing": "5-7 mg/kg q24h (extended interval dosing)",
+      "renalAdjustment": "Requires TDM; adjust interval based on CrCl",
+      "hepaticAdjustment": "No adjustment",
+      "keyWarning": "Slightly less nephrotoxic than gentamicin",
+      "resistanceInfo": "Preferred aminoglycoside for Pseudomonas",
+      "drugInteractions": "Furosemide (↑ ototoxicity), vancomycin (↑ nephrotoxicity)",
+      "precautions": "Inhaled formulation available for CF maintenance (↓ systemic toxicity)"
+    },
+    {
+      "name": "Amikacin (Amikin®)",
+      "keyUses": ["MDR Gram-negative infections", "Second-line TB therapy", "Nocardia"],
+      "spectrum": "Broadest aminoglycoside spectrum - active vs. most gentamicin-resistant strains",
+      "dosing": "15-20 mg/kg q24h (HIGH dose due to lower potency)",
+      "renalAdjustment": "Requires TDM; CrCl 30-60: 7.5-10 mg/kg q24h; CrCl <30: 5-7 mg/kg q48h; HD: 5-7 mg/kg post-HD",
+      "hepaticAdjustment": "No adjustment",
+      "keyWarning": "Higher toxicity profile: nephrotoxicity 15-20%, ototoxicity 10-15%",
+      "resistanceInfo": "Resistance developing in MDR Pseudomonas and Acinetobacter",
+      "drugInteractions": "Loop diuretics (↑ ototoxicity 3x), vancomycin (↑ nephrotoxicity)",
+      "precautions": "Baseline audiogram mandatory for therapy >7 days, avoid in pregnancy"
+    }
+  ],
+  "fluoroquinolones": [
+    {
+      "name": "Levofloxacin (Levaquin®)",
+      "keyUses": ["CAP (atypical coverage)", "Complicated UTIs", "Prostatitis"],
+      "spectrum": "Streptococci, Gram-negative, Legionella, Mycoplasma, Chlamydia",
+      "dosing": "750mg IV/PO q24h",
+      "renalAdjustment": "CrCl 20-49: 750mg then 250mg q24h; CrCl <20: 750mg then 250mg q48h; HD: 750mg then 500mg q48h",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Tendon rupture risk (0.1-1%), QT prolongation, photosensitivity (5-10%)",
+      "resistanceInfo": "Increasing resistance in E. coli UTIs",
+      "drugInteractions": "Multivalent cations (↓ absorption 90%), warfarin (↑ INR 20-50%), corticosteroids (↑ tendon rupture)",
+      "precautions": "AVOID in age >60 with vascular disease (aortic aneurysm/dissection risk), AVOID in pregnancy/children <18"
+    },
+    {
+      "name": "Ciprofloxacin (Cipro®)",
+      "keyUses": ["Complicated UTIs", "Pseudomonas infections", "Typhoid fever"],
+      "spectrum": "Excellent Gram-negative/Pseudomonas, moderate streptococci",
+      "dosing": "400mg IV q8h or 500mg PO q12h",
+      "renalAdjustment": "CrCl 30-50: 200-400mg q12h; CrCl <30: 200-400mg q24h; HD: 200-400mg post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "More CNS effects than levofloxacin, tendon rupture risk",
+      "resistanceInfo": "NOT for CAP (poor pneumococcal activity)",
+      "drugInteractions": "Tizanidine (contraindicated - CYP1A2 inhibition), theophylline (↑ levels 50%), warfarin (↑ INR)",
+      "precautions": "Strong CYP1A2 inhibitor, avoid in elderly >60 years, steroid users, transplant recipients"
+    },
+    {
+      "name": "Moxifloxacin (Avelox®)",
+      "keyUses": ["CAP with atypicals + anaerobes", "Intra-abdominal infections"],
+      "spectrum": "Active against anaerobes and atypicals, NO Pseudomonas",
+      "dosing": "400mg IV/PO q24h (NO renal adjustment)",
+      "renalAdjustment": "NO ADJUSTMENT NEEDED (hepatic metabolism)",
+      "hepaticAdjustment": "Use with caution in severe impairment (Child-Pugh C)",
+      "keyWarning": "HIGHEST QT prolongation risk among quinolones - ECG mandatory",
+      "resistanceInfo": "Poor urinary excretion - NOT for UTIs",
+      "drugInteractions": "Antiarrhythmics (↑ torsades risk), antipsychotics (↑ QTc)",
+      "precautions": "Monitor ECG if cardiac risk factors, avoid in patients on antiarrhythmics, antipsychotics"
+    }
+  ],
+  "glycopeptides": [
+    {
+      "name": "Vancomycin (Vancocin®)",
+      "keyUses": ["MRSA infections", "C. difficile (oral form)"],
+      "spectrum": "Gram-positive ONLY (MRSA, MSSA, streptococci, VSE enterococci)",
+      "dosing": "15-20 mg/kg q8-12h (AUC-guided dosing 400-600 mg·h/L)",
+      "renalAdjustment": "CrCl 30-50: 15-20 mg/kg q24h; CrCl 10-29: 10-15 mg/kg q24h; CrCl <10: 10-15 mg/kg q48-72h; HD: 10-15 mg/kg post-HD",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Nephrotoxicity 5-20% (especially with piperacillin-tazobactam)",
+      "resistanceInfo": "NOT active against VRE (VanA/B)",
+      "drugInteractions": "Piperacillin-tazobactam (↑ nephrotoxicity 3-5x), loop diuretics (↑ ototoxicity)",
+      "precautions": "Infuse over ≥60 minutes to prevent Red Man Syndrome, TDM mandatory"
+    },
+    {
+      "name": "Teicoplanin (Targocid®)",
+      "keyUses": ["MRSA infections", "Endocarditis", "OPAT (outpatient parenteral therapy)"],
+      "spectrum": "Gram-positive ONLY including VRE (VanB, VanC, VanE, VanG)",
+      "dosing": "6-12 mg/kg loading (q12h x3), then 6-12 mg/kg q24h maintenance",
+      "renalAdjustment": "CrCl 40-60: 6 mg/kg q48h; CrCl <40: 6 mg/kg q72h; HD: 6 mg/kg post-HD (removed 40-65% by HD)",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Thrombocytopenia (5-10%), reversible on discontinuation",
+      "resistanceInfo": "NOT active against VRE (VanA) phenotype",
+      "drugInteractions": "Warfarin (↑ INR 20-40%), nephrotoxins (additive nephrotoxicity)",
+      "precautions": "Long half-life (70-100h) allows once-daily dosing, TDM recommended (target trough 15-30 mg/L)"
+    },
+    {
+      "name": "Daptomycin (Cubicin®)",
+      "keyUses": ["MRSA bacteremia", "VRE bloodstream", "Complicated skin infections"],
+      "spectrum": "Gram-positive ONLY including VRE",
+      "dosing": "6-10 mg/kg IV q24h",
+      "renalAdjustment": "NO ADJUSTMENT needed (minimal renal excretion)",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Myopathy (5-10%), rhabdomyolysis (1-2%) - monitor CK weekly",
+      "resistanceInfo": "NOT for pneumonia (inactivated by surfactant)",
+      "drugInteractions": "HMG-CoA reductase inhibitors (statins) - AVOID combination",
+      "precautions": "Stop statins during therapy, monitor CK weekly, contraindicated in pneumonia"
+    }
+  ],
+  "tetracyclines": [
+    {
+      "name": "Doxycycline (Vibramycin®)",
+      "keyUses": ["MRSA skin infections", "Atypical pneumonia", "Lyme disease", "Rickettsia"],
+      "spectrum": "MRSA, MSSA, atypicals (Rickettsia, Ehrlichia, Chlamydia), some anaerobes",
+      "dosing": "100mg PO/IV q12h",
+      "renalAdjustment": "NO ADJUSTMENT NEEDED (hepatic metabolism)",
+      "hepaticAdjustment": "Use caution in severe impairment",
+      "keyWarning": "EXTREME photosensitivity (30-50%), tooth discoloration in children/pregnancy",
+      "resistanceInfo": "Increasing resistance in community MRSA",
+      "drugInteractions": "Antacids/iron (↓ absorption 50-70%), warfarin (↑ INR)",
+      "precautions": "TAKE WITH FULL GLASS WATER, stay upright 30 min to prevent esophageal ulceration"
+    },
+    {
+      "name": "Tigecycline (Tygacil®)",
+      "keyUses": ["Salvage for XDR infections", "Complicated intra-abdominal", "cSSSI"],
+      "spectrum": "Broadest spectrum - MRSA, VRE, ESBL, anaerobes, atypicals",
+      "dosing": "100mg IV q12h (loading dose)",
+      "renalAdjustment": "NO ADJUSTMENT NEEDED (hepatic metabolism)",
+      "hepaticAdjustment": "Severe impairment (Child-Pugh C): 50mg q12h",
+      "keyWarning": "BLACK BOX: ↑ mortality vs. comparators (10-15%), reserve for no alternatives",
+      "resistanceInfo": "INHERENTLY RESISTANT to Pseudomonas",
+      "drugInteractions": "Warfarin (↑ INR 50-100%), digoxin (↑ levels 50%)",
+      "precautions": "Prophylactic antiemetics recommended (nausea/vomiting 30%), NOT for bacteremia or VAP"
+    }
+  ],
+  "macrolides": [
+    {
+      "name": "Azithromycin (Klacid®)",
+      "keyUses": ["Community-acquired pneumonia", "STIs (chlamydia)", "MAC prophylaxis"],
+      "spectrum": "Streptococci, Legionella, Mycoplasma, Chlamydia, atypicals",
+      "dosing": "500mg PO/IV daily (5-day course for CAP)",
+      "renalAdjustment": "No adjustment needed for mild-moderate impairment",
+      "hepaticAdjustment": "Severe impairment: Use 50% dose",
+      "keyWarning": "QT prolongation (1-3%), hepatotoxicity with prolonged use",
+      "resistanceInfo": "Increasing resistance in S. pneumoniae (30-40%)",
+      "drugInteractions": "CYP3A4 substrates (↑ levels), warfarin (↑ INR 30-50%), digoxin (↑ levels)",
+      "precautions": "Monitor ECG in cardiac risk patients, avoid with other QT-prolonging drugs"
+    },
+    {
+      "name": "Clarithromycin",
+      "keyUses": ["H. pylori eradication", "Community-acquired pneumonia", "MAC prophylaxis"],
+      "spectrum": "Streptococci, H. influenzae, atypicals, some MSSA",
+      "dosing": "500mg PO q12h",
+      "renalAdjustment": "CrCl <30: 250mg q24h",
+      "hepaticAdjustment": "Severe hepatic impairment + renal impairment: CONTRAINDICATED",
+      "keyWarning": "QT prolongation (dose-dependent), hepatotoxicity",
+      "resistanceInfo": "NOT for MRSA or Pseudomonas",
+      "drugInteractions": "CYP3A4 substrates (strong inhibitor), statins (↑ rhabdomyolysis risk 10x)",
+      "precautions": "AVOID with simvastatin/lovastatin, monitor for QT prolongation"
+    }
+  ],
+  "sulfonamides": [
+    {
+      "name": "Trimethoprim-Sulfamethoxazole (Septrin®)",
+      "keyUses": ["Urinary tract infections", "PCP prophylaxis", "Stenotrophomonas infections"],
+      "spectrum": "Gram-negative rods, Stenotrophomonas, Pneumocystis jirovecii",
+      "dosing": "160/800mg PO/IV q12h (double-strength tablet)",
+      "renalAdjustment": "CrCl 15-30: 160/800mg q24h; CrCl <15: 160/800mg q48h; HD: 160/800mg post-HD",
+      "hepaticAdjustment": "Use caution in severe hepatic impairment",
+      "keyWarning": "Hyperkalemia (10-15%), bone marrow suppression (folate antagonist)",
+      "resistanceInfo": "High resistance in E. coli UTIs (20-40%), NOT active against Pseudomonas",
+      "drugInteractions": "Warfarin (↑ INR 50-100%), phenytoin (↑ levels), methotrexate (↑ toxicity)",
+      "precautions": "Folinic acid supplementation for prolonged therapy, avoid in G6PD deficiency"
+    }
+  ],
+  "others": [
+    {
+      "name": "Linezolid (Zyvox®)",
+      "keyUses": ["VRE infections", "MRSA pneumonia", "Resistant streptococci"],
+      "spectrum": "Gram-positive ONLY (including VRE)",
+      "dosing": "600mg IV/PO q12h",
+      "renalAdjustment": "No adjustment needed",
+      "hepaticAdjustment": "No adjustment needed",
+      "keyWarning": "Thrombocytopenia (15-30%), serotonin syndrome with SSRIs/SNRIs",
+      "resistanceInfo": "First-line for VRE bacteremia",
+      "drugInteractions": "SSRIs/SNRIs (serotonin syndrome), MAO inhibitors (contraindicated), tyramine-rich foods (hypertensive crisis)",
+      "precautions": "Monitor CBC weekly, limit duration to ≤14 days, screen for serotonergic agents"
+    },
+    {
+      "name": "Metronidazole (Flagyl®)",
+      "keyUses": ["C. difficile colitis", "Anaerobic infections", "Brain abscess"],
+      "spectrum": "SELECTIVE ANAEROBIC - NO aerobic activity",
+      "dosing": "500mg IV/PO q8h",
+      "renalAdjustment": "CrCl <10: 500mg q12-24h; HD: 500mg post-HD",
+      "hepaticAdjustment": "Severe (Child-Pugh C): Reduce dose 50%",
+      "keyWarning": "DISULFIRAM REACTION with alcohol (up to 72 hours after last dose)",
+      "resistanceInfo": "Gold standard for anaerobic coverage",
+      "drugInteractions": "Warfarin (↑ INR 20-40%), alcohol (disulfiram reaction)",
+      "precautions": "AVOID ALL ALCOHOL during therapy + 72h after, monitor for peripheral neuropathy with prolonged use"
+    },
+    {
+      "name": "Clindamycin (Cleocin®)",
+      "keyUses": ["Necrotizing fasciitis (toxin suppression)", "Anaerobic sepsis", "Aspiration pneumonia"],
+      "spectrum": "Gram-positive and anaerobes",
+      "dosing": "600-900mg IV q8h",
+      "renalAdjustment": "No adjustment needed (hepatic metabolism)",
+      "hepaticAdjustment": "Use caution in severe impairment",
+      "keyWarning": "HIGHEST C. difficile risk (5-20%) - limit to ≤7 days",
+      "resistanceInfo": "NOT reliable for MRSA (20-40% resistance)",
+      "drugInteractions": "Neuromuscular blockers (↑ paralysis), warfarin (↑ INR 20-40%)",
+      "precautions": "Limited duration (≤7 days), use metronidazole for routine anaerobic coverage, avoid if C. diff history"
+    }
+  ],
+  "mdr": [
+    {
+      "name": "MDR Infections Overview",
+      "keyUses": ["Carbapenem-Resistant Enterobacterales (CRE)", "MDR Pseudomonas", "MDR Acinetobacter"],
+      "spectrum": "Multidrug-Resistant organisms resistant to ≥3 antibiotic classes",
+      "dosing": "Combination therapy often required",
+      "keyWarning": "Monotherapy failure rate 15-50% depending on organism and site",
+      "resistanceInfo": "Combination therapy ↓ mortality 39% in CRE bacteremia",
+      "drugInteractions": "N/A - therapeutic strategy",
+      "precautions": "TDM essential for most regimens"
+    },
+    {
+      "name": "ESBL + Aminoglycoside-Resistant",
+      "keyUses": ["Deep infections (intra-abdominal abscess)", "Bloodstream infections"],
+      "spectrum": "N/A - therapeutic strategy",
+      "dosing": "Carbapenem (meropenem 2g q8h) + Tigecycline (100mg q12h)",
+      "keyWarning": "Tigecycline monotherapy failure rate 30-50% due to resistance emergence",
+      "resistanceInfo": "80-90% cure with combination vs. 60-70% with single agent",
+      "drugInteractions": "Warfarin (↑ INR 50-100% with tigecycline)",
+      "precautions": "Extended spectrum beta-lactamase producers with aminoglycoside resistance"
+    },
+    {
+      "name": "CRE Bloodstream Infections",
+      "keyUses": ["KPC-producing Klebsiella", "MBL (NDM/VIM) producers", "OXA-48 producers"],
+      "spectrum": "N/A - therapeutic strategy",
+      "dosing": "Meropenem-vaborbactam 4g q8h OR Ceftazidime-avibactam + Aztreonam 2g q8h",
+      "keyWarning": "Always confirm resistance mechanism before selecting therapy",
+      "resistanceInfo": "70-80% clinical cure with combination vs. 45-55% with monotherapy",
+      "drugInteractions": "Valproic acid (contraindicated with meropenem combinations)",
+      "precautions": "TDM for vancomycin if combined, monitor for C. difficile"
+    },
+    {
+      "name": "MDR Acinetobacter Solutions",
+      "keyUses": ["CRAB bloodstream", "CRAB pneumonia", "CRAB UTIs"],
+      "spectrum": "Carbapenem-Resistant Acinetobacter baumannii",
+      "dosing": "High-dose ampicillin-sulbactam 9g IV q8h + minocycline 200mg IV q12h",
+      "renalAdjustment": "CrCl 30-50: 6g q8h + minocycline 100mg q12h; CrCl <30: 3g q8h + minocycline 100mg q24h",
+      "hepaticAdjustment": "Severe impairment: Reduce minocycline dose 50%",
+      "keyWarning": "Sulbactam component provides unique anti-Acinetobacter activity",
+      "resistanceInfo": "65-75% microbiologic eradication with sulbactam-based regimens",
+      "drugInteractions": "Warfarin (↑ INR with sulbactam component)",
+      "precautions": "Renal monitoring essential (high sodium load), phlebitis common"
+    }
+  ],
+  "esbl": [
+    {
+      "name": "ESBL Definition & Epidemiology",
+      "keyUses": ["Understanding resistance mechanisms", "Epidemiology"],
+      "spectrum": "ESBLs exclusively produced by GRAM-NEGATIVE bacteria (Enterobacteriaceae)",
+      "dosing": "N/A",
+      "keyWarning": "Plasmid-encoded - rapid horizontal transmission between bacteria",
+      "resistanceInfo": "CTX-M (80% of ESBLs in US), SHV, TEM enzymes; NOT hydrolyzed by carbapenems",
+      "drugInteractions": "N/A",
+      "precautions": "Risk factors: prior antibiotic exposure, healthcare exposure, travel to endemic areas"
+    },
+    {
+      "name": "ESBL Empiric Therapy",
+      "keyUses": ["Septic shock with ESBL risk factors", "Healthcare-associated pneumonia", "Intra-abdominal sepsis"],
+      "spectrum": "N/A - therapeutic guidelines",
+      "dosing": "Meropenem 2g IV q8h over 3h infusion (extended) for first 48 hours",
+      "keyWarning": "Empiric coverage crucial in high-risk patients",
+      "resistanceInfo": "85-95% clinical cure when started early in septic shock",
+      "drugInteractions": "Valproic acid (contraindicated)",
+      "precautions": "Assess for de-escalation after 48h if cultures negative"
+    },
+    {
+      "name": "ESBL Treatment Guidelines",
+      "keyUses": ["Empiric therapy", "Definitive therapy", "Step-down therapy"],
+      "spectrum": "N/A - therapeutic guidelines",
+      "dosing": "Carbapenems for severe infections; TMP-SMX/fluoroquinolones for susceptible UTIs",
+      "keyWarning": "Avoid cephalosporins for ESBL infections - high failure rates",
+      "resistanceInfo": "Meropenem 85-95% clinical cure when started early in septic shock",
+      "drugInteractions": "N/A",
+      "precautions": "Duration: 7 days for uncomplicated UTIs, 14 days for bacteremia, source control essential"
+    }
+  ],
+  "resistance": [
+    {
+      "name": "KPC Carbapenemase (Class A)",
+      "keyUses": ["KPC-producing CRE"],
+      "spectrum": "N/A - therapeutic strategies",
+      "dosing": "Meropenem-vaborbactam 4g IV q8h over 3 hours",
+      "keyWarning": "Always confirm resistance mechanism before selecting therapy",
+      "resistanceInfo": "75-85% clinical success in retrospective studies",
+      "drugInteractions": "Valproic acid (contraindicated)",
+      "precautions": "Use when MIC ≤4 mg/L, not active against MBL producers"
+    },
+    {
+      "name": "Metallo-Beta-Lactamases (MBL - NDM/VIM)",
+      "keyUses": ["NDM/VIM-producing CRE"],
+      "spectrum": "N/A - therapeutic strategies",
+      "dosing": "Ceftazidime-avibactam 2.5g q8h + Aztreonam 2g q8h (both extended infusion)",
+      "keyWarning": "Avibactam does not inhibit MBLs; aztreonam provides coverage",
+      "resistanceInfo": "70-80% clinical cure in compassionate use programs",
+      "drugInteractions": "None significant",
+      "precautions": "Confirm NDM/VIM production before use, consider adding colistin for deep infections"
+    },
+    {
+      "name": "Tigecycline Resistance",
+      "keyUses": ["Acinetobacter baumannii", "Klebsiella pneumoniae (CRE)"],
+      "spectrum": "N/A - therapeutic strategies",
+      "dosing": "Sulbactam 9g q8h + minocycline + colistin for A. baumannii",
+      "keyWarning": "NEVER use tigecycline monotherapy for severe infections",
+      "resistanceInfo": "Efflux pump overexpression (AcrAB-TolC) and tet(X4) gene are common mechanisms",
+      "drugInteractions": "Warfarin (↑ INR 50-100%)",
+      "precautions": "Therapeutic drug monitoring for colistin (nephrotoxic), monitor for C. difficile"
+    }
+  ],
+  "stewardship": [
+    {
+      "name": "Antimicrobial Stewardship Principles",
+      "keyUses": ["De-escalation", "Duration optimization", "Route conversion"],
+      "spectrum": "N/A - stewardship principles",
+      "dosing": "Review all antibiotics at 48-72 hours for de-escalation",
+      "keyWarning": "Longer duration increases resistance risk and side effects",
+      "resistanceInfo": "Appropriate duration ↓ mortality and resistance development",
+      "drugInteractions": "N/A",
+      "precautions": "Document indication, expected duration, and planned review at 48-72h"
+    },
+    {
+      "name": "Extended Infusion Protocols",
+      "keyUses": ["Severe infections", "Pseudomonas coverage", "Critical care"],
+      "spectrum": "N/A - dosing strategy",
+      "dosing": "β-lactams (piperacillin-tazo, cefepime, meropenem) over 3-4 hours",
+      "keyWarning": "Standard short infusions may fail to achieve PK/PD targets in severe infections",
+      "resistanceInfo": "Extended infusion improves outcomes in sepsis by 20-30%",
+      "drugInteractions": "N/A",
+      "precautions": "Compatibility with IV fluids, stability during extended infusion"
+    },
+    {
+      "name": "Therapeutic Drug Monitoring",
+      "keyUses": ["Vancomycin", "Aminoglycosides", "Teicoplanin", "β-lactams in critical illness"],
+      "spectrum": "N/A - monitoring strategy",
+      "dosing": "Target AUC/MIC 400-600 for vancomycin; peaks/troughs for aminoglycosides",
+      "keyWarning": "TDM essential for narrow therapeutic index drugs",
+      "resistanceInfo": "Proper dosing prevents subtherapeutic exposure and resistance development",
+      "drugInteractions": "N/A",
+      "precautions": "Timing of blood draws critical for accurate interpretation, use validated assays"
+    },
+    {
+      "name": "Critical Care Dosing Strategies",
+      "keyUses": ["Sepsis with AKI", "Volume expansion", "Critically ill patients"],
+      "spectrum": "N/A - critical care principles",
+      "dosing": "\"Front-loading\" full dose within first 48h, then adjust based on renal function",
+      "keyWarning": "Standard doses often subtherapeutic in sepsis due to ↑ volume of distribution",
+      "resistanceInfo": "Hydrophilic drugs (β-lactams, aminoglycosides, glycopeptides) require higher loading doses",
+      "drugInteractions": "N/A",
+      "precautions": "Monitor for therapeutic failure at 48h, adjust based on measured CrCl"
+    }
+  ],
+  "pregnancy": [
+    {
+      "name": "Penicillins in Pregnancy",
+      "keyUses": ["Urinary tract infections", "Group B strep prophylaxis", "Skin infections"],
+      "spectrum": "Group B streptococcus, E. coli, MSSA",
+      "dosing": "Amoxicillin 500mg PO q8h or Penicillin G 5 million units IV q4h",
+      "safety": "FDA Category B - No evidence of fetal risk",
+      "keyWarning": "Hypersensitivity reactions (3-10%)",
+      "resistanceInfo": "NOT active against ESBL producers",
+      "precautions": "Skin testing if prior reaction, monitor for ampicillin rash in mononucleosis"
+    },
+    {
+      "name": "Cephalosporins in Pregnancy",
+      "keyUses": ["Pyelonephritis", "Chorioamnionitis", "Surgical prophylaxis"],
+      "spectrum": "Gram-negative rods, streptococci",
+      "dosing": "Ceftriaxone 1-2g IV q24h",
+      "safety": "FDA Category B - No evidence of fetal risk",
+      "keyWarning": "Low risk of biliary sludge with prolonged use",
+      "resistanceInfo": "NOT active against ESBL or MRSA",
+      "precautions": "Avoid in 3rd trimester if neonatal hyperbilirubinemia risk"
+    },
+    {
+      "name": "Clindamycin & Azithromycin",
+      "keyUses": ["Penicillin-allergic GBS prophylaxis", "Chorioamnionitis", "Atypical pneumonia"],
+      "spectrum": "Gram-positive, anaerobes (clindamycin); atypicals (azithromycin)",
+      "dosing": "Clindamycin 900mg IV q8h or Azithromycin 500mg IV daily",
+      "safety": "Clindamycin (Category B), Azithromycin (Category B)",
+      "keyWarning": "Clindamycin: C. difficile risk (5-10%); Azithromycin: QT prolongation",
+      "resistanceInfo": "Clindamycin resistance in GBS 10-15%; azithromycin resistance in S. pneumoniae 30-40%",
+      "precautions": "Azithromycin preferred over erythromycin (less GI side effects)"
+    },
+    {
+      "name": "Drugs to AVOID in Pregnancy",
+      "keyUses": ["N/A - safety information"],
+      "spectrum": "N/A",
+      "dosing": "N/A",
+      "safety": "CONTRAINDICATED: Fluoroquinolones (Category C), Tetracyclines (Category D), Aminoglycosides (Category D for gentamicin/tobramycin)",
+      "keyWarning": "Fluoroquinolones: cartilage toxicity; Tetracyclines: tooth discoloration, bone growth inhibition; Aminoglycosides: fetal ototoxicity",
+      "resistanceInfo": "N/A",
+      "precautions": "Aminoglycosides only if absolutely necessary (e.g., MDR TB); monitor fetal hearing after birth"
+    }
+  ],
+  "prophylaxis": [
+    {
+      "name": "Surgical Site Infection Prophylaxis",
+      "keyUses": ["Clean-contaminated surgery", "Contaminated surgery", "Trauma surgery"],
+      "spectrum": "Skin flora (S. aureus, S. epidermidis), enteric organisms",
+      "dosing": "Cefazolin 2g IV (3g if BMI >30) within 60 min before incision",
+      "duration": "Single dose for most procedures; redose q4h for cefazolin during long procedures",
+      "keyWarning": "Inadequate timing (too early/late) ↑ SSI risk 3-5x",
+      "resistanceInfo": "MRSA coverage not needed for routine prophylaxis",
+      "precautions": "Extend to 24h for cardiac, orthopedic, and major vascular procedures"
+    },
+    {
+      "name": "Endocarditis Prophylaxis",
+      "keyUses": ["Dental procedures with manipulation of gingival tissue", "Invasive respiratory procedures"],
+      "spectrum": "Viridans group streptococci",
+      "dosing": "Amoxicillin 2g PO 1h before procedure (adults)",
+      "duration": "Single dose only",
+      "keyWarning": "Indications narrowed since 2007 (only highest risk cardiac conditions)",
+      "resistanceInfo": "Penicillin resistance in viridans streptococci rare (<5%)",
+      "precautions": "Only for patients with prosthetic cardiac valves, previous IE, congenital heart disease"
+    },
+    {
+      "name": "Travel Prophylaxis",
+      "keyUses": ["Malaria-endemic areas", "Traveler's diarrhea prevention"],
+      "spectrum": "Plasmodium spp., E. coli",
+      "dosing": "Doxycycline 100mg PO daily starting 1-2 days before travel; Ciprofloxacin 500mg PO daily for high-risk travel",
+      "duration": "Doxycycline: entire stay + 4 weeks after; Ciprofloxacin: during high-risk exposure only",
+      "keyWarning": "Doxycycline: photosensitivity; Ciprofloxacin: tendon rupture risk",
+      "resistanceInfo": "Chloroquine resistance widespread in P. falciparum",
+      "precautions": "Malaria prophylaxis must continue after return, sunscreen with doxycycline"
+    },
+    {
+      "name": "Close Contact Prophylaxis",
+      "keyUses": ["Meningococcal disease contacts", "Pertussis contacts", "Invasive GAS contacts"],
+      "spectrum": "N. meningitidis, B. pertussis, S. pyogenes",
+      "dosing": "Ciprofloxacin 500mg PO single dose (meningococcal); Azithromycin 500mg PO daily x5d (pertussis)",
+      "duration": "Single dose (meningococcal) or 5 days (pertussis)",
+      "keyWarning": "Secondary cases can occur within 7 days if prophylaxis delayed",
+      "resistanceInfo": "Macrolide resistance in B. pertussis increasing (10-15%)",
+      "precautions": "Treat entire household for pertussis, check vaccination status"
+    }
+  ],
+  "preop": [
+    {
+      "name": "Cardiac Surgery",
+      "keyUses": ["CABG", "Valve replacement", "Aortic surgery"],
+      "spectrum": "S. aureus, coagulase-negative staphylococci",
+      "dosing": "Cefazolin 2g IV (3g if BMI >30) within 60 min before incision",
+      "duration": "24 hours post-op",
+      "alternatives": "Vancomycin 15mg/kg IV if MRSA colonization or β-lactam allergy",
+      "keyWarning": "Inadequate timing ↑ SSI risk 4x",
+      "precautions": "Redose q4h during prolonged procedures (>4h)"
+    },
+    {
+      "name": "Orthopedic Surgery",
+      "keyUses": ["Joint replacement", "Fracture fixation", "Spinal fusion"],
+      "spectrum": "S. aureus, coagulase-negative staphylococci",
+      "dosing": "Cefazolin 2g IV (3g if BMI >30) within 60 min before incision",
+      "duration": "24 hours post-op (24h for clean cases, 48-72h for trauma/contaminated)",
+      "alternatives": "Vancomycin 15mg/kg IV if MRSA history or β-lactam allergy",
+      "keyWarning": "MRSA decolonization (mupirocin + chlorhexidine) pre-op ↓ SSI by 40%",
+      "precautions": "Consider adding vancomycin for revision arthroplasty or MRSA history"
+    },
+    {
+      "name": "Gastrointestinal Surgery",
+      "keyUses": ["Colorectal surgery", "Appendectomy", "Biliary surgery"],
+      "spectrum": "Enteric Gram-negative rods, anaerobes",
+      "dosing": "Cefoxitin 2g IV or Piperacillin-tazobactam 3g IV within 60 min before incision",
+      "duration": "24 hours post-op",
+      "alternatives": "Ertapenem 1g IV if high ESBL risk",
+      "keyWarning": "Mechanical bowel prep + oral antibiotics ↓ SSI by 60% in colorectal surgery",
+      "precautions": "Oral antibiotic component: Neomycin/erythromycin base the day before"
+    },
+    {
+      "name": "Gynecologic Surgery",
+      "keyUses": ["Hysterectomy", "Cesarean section", "Oophorectomy"],
+      "spectrum": "Enteric Gram-negative rods, anaerobes, group B strep",
+      "dosing": "Cefazolin 2g IV + Metronidazole 500mg IV within 60 min before incision",
+      "duration": "24 hours post-op (single dose for C-section)",
+      "alternatives": "Clindamycin 900mg IV + Gentamicin 5mg/kg IV if β-lactam allergy",
+      "keyWarning": "Single dose for C-section after cord clamping ↓ neonatal exposure",
+      "precautions": "Redose q3-4h for long procedures, consider azithromycin for C-section (↓ endometritis 50%)"
+    }
+  ],
+  "terminology": [
+    {
+      "name": "MDR (Multidrug-Resistant)",
+      "definition": "Resistant to ≥3 antibiotic classes (e.g., MDR Pseudomonas, MDR Acinetobacter)",
+      "clinicalImportance": "Limited treatment options, higher mortality (20-50% vs. 5-10% for susceptible)",
+      "detection": "Antibiotic susceptibility testing showing resistance to multiple classes",
+      "prevention": "Antibiotic stewardship, infection control measures",
+      "prevalence": "Increasing worldwide, 10-25% of Gram-negative isolates in hospitals",
+      "keyStrategies": "Combination therapy, source control, therapeutic drug monitoring"
+    },
+    {
+      "name": "ESBL (Extended-Spectrum Beta-Lactamase)",
+      "definition": "Enzymes that hydrolyze penicillins and cephalosporins but not carbapenems",
+      "clinicalImportance": "Treatment failure with cephalosporins (30-40% failure rate)",
+      "detection": "Phenotypic tests (ceftazidime/clavulanate synergy), molecular PCR for genes",
+      "prevention": "Avoid unnecessary cephalosporin use, infection control for ESBL carriers",
+      "prevalence": "E. coli (10-15%), K. pneumoniae (20-30%) in US hospitals",
+      "keyStrategies": "Carbapenems for severe infections, TMP-SMX or nitrofurantoin for susceptible UTIs"
+    },
+    {
+      "name": "MIC (Minimum Inhibitory Concentration)",
+      "definition": "Lowest concentration of antibiotic that prevents visible bacterial growth",
+      "clinicalImportance": "Guides dosing strategy (standard vs. high dose), predicts clinical success",
+      "detection": "Broth microdilution, Etest, automated systems (VITEK, BD Phoenix)",
+      "interpretation": "Susceptible (S), Intermediate (I), Resistant (R) based on CLSI/EUCAST breakpoints",
+      "limitations": "In vitro measure, may not reflect in vivo conditions (protein binding, tissue penetration)",
+      "keyStrategies": "Dose optimization based on MIC (e.g., high-dose extended infusion for high MIC organisms)"
+    },
+    {
+      "name": "Culture-Guided Therapy",
+      "definition": "Using microbiology results to guide antibiotic selection and de-escalation",
+      "clinicalImportance": "Optimizes antibiotic use, reduces resistance development, improves outcomes",
+      "detection": "Blood cultures, tissue cultures, urine cultures with susceptibility testing",
+      "timing": "Obtain cultures BEFORE starting antibiotics when possible (except septic shock)",
+      "stewardship": "Review cultures at 48-72h for de-escalation or discontinuation",
+      "limitations": "Slow turnaround (24-72h), false negatives with prior antibiotic use",
+      "keyStrategies": "Empiric therapy based on site + local resistance patterns, then de-escalate to targeted therapy"
+    }
+  ]
+}
